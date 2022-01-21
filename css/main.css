@@ -36,6 +36,15 @@ button {
 svg {
   display: block;
   pointer-events: none;
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  svg {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 :root {
@@ -48,7 +57,24 @@ svg {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
@@ -56,39 +82,67 @@ svg {
   padding-bottom: 20px;
 }
 
-.header__container {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1200px) {
+  .header__container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header__title {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header__title {
+    font-size: 32px;
+  }
 }
 
 .header__title span {
   display: block;
-  font-weight: 400;
   font-family: 'Permanent Marker', sans-serif;
-  font-size: 64px;
+  font-weight: 400;
+  font-size: 24px;
   color: var(--first-accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .header__title span {
+    font-size: 64px;
+  }
+}
+
 .logo {
-  position: absolute;
-  top: 0;
-  left: 0;
   font-family: 'Permanent Marker', sans-serif;
-  font-size: 24px;
   color: var(--first-accent-color);
+  font-size: 12px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .logo:hover, .logo:focus {
@@ -113,19 +167,47 @@ svg {
 }
 
 .score {
-  font-size: 44px;
   font-weight: 500;
   margin-bottom: 20px;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .score {
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
 }
 
 .card-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (110px)[5];
-      grid-template-columns: repeat(5, 110px);
-  -ms-grid-rows: (110px)[4];
-      grid-template-rows: repeat(4, 110px);
+  -ms-grid-columns: (60px)[4];
+      grid-template-columns: repeat(4, 60px);
+  -ms-grid-rows: (60px)[5];
+      grid-template-rows: repeat(5, 60px);
   grid-gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-list {
+    -ms-grid-columns: (100px)[5];
+        grid-template-columns: repeat(5, 100px);
+    -ms-grid-rows: (100px)[4];
+        grid-template-rows: repeat(4, 100px);
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-list {
+    -ms-grid-columns: (200px)[5];
+        grid-template-columns: repeat(5, 200px);
+    -ms-grid-rows: (200px)[4];
+        grid-template-rows: repeat(4, 200px);
+    grid-gap: 20px;
+  }
 }
 
 .card {

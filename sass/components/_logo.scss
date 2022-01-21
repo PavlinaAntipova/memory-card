@@ -1,10 +1,19 @@
 .logo {
-  position: absolute;
-  top: 0;
-  left: 0;
   font-family: 'Permanent Marker', sans-serif;
-  font-size: 24px;
   color: var(--first-accent-color);
+  font-size: 12px;
+  display: block;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   &:hover,
   &:focus {

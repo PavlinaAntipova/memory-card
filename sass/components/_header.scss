@@ -4,21 +4,31 @@
 }
 
 .header__container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .header__title {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 16px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+  }
 }
 
 .header__title span {
   display: block;
-  font-weight: 400;
   font-family: 'Permanent Marker', sans-serif;
-  font-size: 64px;
+  font-weight: 400;
+  font-size: 24px;
   color: var(--first-accent-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 64px;
+  }
 }

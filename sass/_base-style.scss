@@ -35,4 +35,11 @@ button {
 svg {
   display: block;
   pointer-events: none;
+  width: 50px;
+  height: 50px;
+
+  @media screen and (min-width: 768px) {
+    width: 70px;
+    height: 70px;
+  }
 }
