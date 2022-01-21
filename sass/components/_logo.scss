@@ -1,0 +1,13 @@
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 24px;
+  color: var(--first-accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--second-accent-color);
+  }
+}

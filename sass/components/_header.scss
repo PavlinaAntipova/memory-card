@@ -1,0 +1,24 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.header__title span {
+  display: block;
+  font-weight: 400;
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 64px;
+  color: var(--first-accent-color);
+}
