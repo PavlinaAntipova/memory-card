@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+        <header class="header">
+            <div class="container header__container"><a class="logo" href="./index.html">MEMORY GAME</a>
+            <h1 class="header__title">Welcome to <span>MEMORY GAME</span></h1></div>
+        </header>
+        <main class="game">
+<section class="section">
+    <div class="container section__container">
+    <p class="score">Your Score: <span class="js-score">0</span></p>
+    <ul class="card-list js-card-list">
+<li class="card" data-icon="pizza"><div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div><div class="card__front"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-pizza"></use>
+</svg></div></li>
+<li class="card" data-icon="ice-cream">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+        <use href="./img/icons.svg#icon-ice-cream"></use>
+    </svg></div>
+</li>
+<li class="card" data-icon="tomatoes">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+        <use href="./img/icons.svg#icon-tomatoes"></use>
+    </svg></div>
+</li>
+<li class="card" data-icon="ice-cream-2">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+        <use href="./img/icons.svg#icon-ice-cream-2"></use>
+    </svg></div>
+</li>
+<li class="card" data-icon="ice-cream">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+        <use href="./img/icons.svg#icon-ice-cream"></use>
+    </svg></div>
+</li>
+<li class="card" data-icon="hot-dog">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-hot-dog"></use>
+        </svg></div>
+</li>
+<li class="card" data-icon="ice-cream-2">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-ice-cream-2"></use>
+        </svg></div>
+</li>
+<li class="card" data-icon="sandwich">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-sandwich"></use>
+        </svg></div>
+</li>
+<li class="card" data-icon="grapes">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-grapes"></use>
+        </svg></div>
+</li>
+<li class="card" data-icon="tomatoes">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-tomatoes"></use>
+        </svg></div>
+</li>
+<li class="card" data-icon="grapes">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-grapes"></use>
+        </svg></div>
+</li>
+<li class="card" data-icon="coconut">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-coconut"></use>
+        </svg></div>
+</li>
+<li class="card" data-icon="hot-dog">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-hot-dog"></use>
+        </svg></div>
+</li>
+<li class="card" data-icon="raspberries">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-raspberries"></use>
+        </svg></div>
+</li>
+<li class="card" data-icon="sandwich">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-sandwich"></use>
+        </svg></div>
+</li>
+<li class="card" data-icon="coconut">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-coconut"></use>
+        </svg></div>
+</li>
+<li class="card" data-icon="cupcake">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-cupcake"></use>
+        </svg></div>
+</li>
+<li class="card" data-icon="pizza">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-pizza"></use>
+        </svg></div>
+</li>
+<li class="card" data-icon="raspberries">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-raspberries"></use>
+        </svg></div>
+</li>
+<li class="card" data-icon="cupcake">
+    <div class="card__back"><svg width="80" height="80">
+    <use href="./img/icons.svg#icon-moon-stars"></use>
+</svg></div>
+    <div class="card__front"><svg width="80" height="80">
+            <use href="./img/icons.svg#icon-cupcake"></use>
+        </svg></div>
+</li>
+
+    </ul>
+</div>
+</section>
+        
+    
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
