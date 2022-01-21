@@ -1,5 +1,4 @@
 body {
-  height: 100vh;
   background-color: rgba(0, 132, 255, 0.26);
 }
 
@@ -149,10 +148,6 @@ svg {
   color: var(--second-accent-color);
 }
 
-.game {
-  height: 100vh;
-}
-
 .section__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,10 +197,10 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .card-list {
-    -ms-grid-columns: (200px)[5];
-        grid-template-columns: repeat(5, 200px);
-    -ms-grid-rows: (200px)[4];
-        grid-template-rows: repeat(4, 200px);
+    -ms-grid-columns: (110px)[5];
+        grid-template-columns: repeat(5, 110px);
+    -ms-grid-rows: (110px)[4];
+        grid-template-rows: repeat(4, 110px);
     grid-gap: 20px;
   }
 }
