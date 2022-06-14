@@ -149,6 +149,7 @@ svg {
 }
 
 .section__container {
+  padding: 0 0 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,5 +267,36 @@ svg {
 
 .is-inactive {
   pointer-events: none;
+}
+
+.footer {
+  padding: 15px 0;
+  background-color: #f7f7f76c;
+}
+
+.footer__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.footer__copy {
+  margin-right: 10px;
+}
+
+.footer__text a {
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */

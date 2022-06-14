@@ -1,0 +1,21 @@
+.footer {
+    padding: 15px 0;
+    background-color: #f7f7f76c;
+}
+
+.footer__content {
+text-align: center;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+.footer__copy {
+margin-right: 10px;
+}
+
+.footer__text a {
+font-weight: 700;
+}
